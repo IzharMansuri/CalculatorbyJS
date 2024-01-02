@@ -2,19 +2,24 @@ button{
     width: 80px;
     height: 80px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50%;
     font-size: 3rem;
     color: aliceblue;
     font-weight: bold;
+    background-color: #333333;
     cursor: pointer;
-    background-color: #3a4432;
-    box-shadow:rgb(255, 255, 255) -1px -1px 6px 1px;
+    box-shadow: inset 0px 0px 5px 0px white;
+}
+.display-parent{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 button:hover{
     opacity: 70%;
 }
 button:active{
-    background-color: hsl(0, 0%, 50%);
+    background-color: #333333;
 }
 .keys{
     display: grid;
@@ -29,26 +34,26 @@ button:active{
     font-size: 5rem;
     text-align: left;
     border: none;
+    outline: none;
     color: aliceblue;
     background: transparent;
-    border-bottom: 1px solid white;
-    box-shadow:rgb(255, 255, 255) -1px -1px 6px 1px;
 }
 .operator-btn{
-    background-color: hsl(27, 100%, 50%);
+    background-color:#f6980a;
 }
 .operator-btn:hover{
-    background-color: hsl(27, 100%, 65%);
+    background-color:#f6980a;
 }
 .operator-btn:active{
-    background-color: hsl(27, 100%, 65%);
+    background-color:#f6980a;
 }
 .calculator{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:  #1F262A;
+    background-color: #000000;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 30%;
     overflow: hidden;
+    box-shadow: 0px 0px 5px white;
 }
 body{
     margin: 0;
@@ -56,5 +61,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: skyblue;
+    background-color:#333333;
+    
 }
